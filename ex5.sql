@@ -59,4 +59,13 @@ mysql> select ename,salary from emp_info where ename like '%a%';
 +---------+--------+
 4 rows in set (0.00 sec)
 
-mysql>
+ select *from emp_info where city in ('chennai','vellore');
++-------+---------+------------+---------+------+--------+
+| empid | ename   | dob        | city    | age  | salary |
++-------+---------+------------+---------+------+--------+
+|     1 | Shiyam  | 1999-07-03 | vellore |   23 |  20000 |
+|     2 | Lohit   | 2000-04-21 | chennai |   18 |  15000 |
+|     3 | Aaditya | 2000-07-29 | chennai |   19 |  11000 |
+|     6 | Logesh  | 2000-01-19 | chennai |   19 |  16000 |
++-------+---------+------------+---------+------+--------+
+4 rows in set (0.00 sec)
